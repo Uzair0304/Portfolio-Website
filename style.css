@@ -330,6 +330,26 @@ textarea::placeholder{
         opacity: 1;
     }
 }
+@keyframes slideInFromTop{
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInFromBottom{
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 
 
@@ -397,4 +417,11 @@ textarea::placeholder{
         position: absolute;
         right: 70px;
     } 
+
+    .left-col{
+        animation: slideInFromTop 1s ease;
+    }
+    .right-col{
+        animation: slideInFromBottom 1s ease;
+    }
 }
