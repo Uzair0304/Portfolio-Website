@@ -128,9 +128,9 @@ ul{
 
 }
 .right-col img{
-    /* max-width: 300px; */
+    max-width: 400px;
     display: block;
-    /* margin: auto; */
+    margin: auto;
 }
 
 
