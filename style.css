@@ -247,6 +247,9 @@ ul{
     margin-top: 10px;
     color: black;
 }
+.preview-btn:hover{
+    opacity: 0.9;
+}
 
 /* Contact */
 #contact{
