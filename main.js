@@ -13,34 +13,6 @@ menuBtn.addEventListener("click", function () {
 })
 
 
-themeIcon.addEventListener("click", function () {
-    
-    if (themeIcon.classList.contains("fa-moon")) {
-        themeIcon.classList.remove("fa-moon")
-        themeIcon.classList.add("fa-lightbulb")
-
-    }
-    else {
-        themeIcon.classList.remove("fa-lightbulb")
-        themeIcon.classList.add("fa-moon")
-
-    }
-
-    changeTheme();
-
-
-})
-
-function changeTheme() {
-    document.body.classList.toggle("change-theme")
-    aboutRight.classList.toggle("change-sec-bg")
-    for (i = 0; i < skillItem.length; i++) {
-        skillItem[i].classList.toggle("change-sec-bg")
-    }
-    
-}
-
-
 window.addEventListener("scroll", function () {
     let scrollBtn = this.document.querySelector(".scroll-btn")
     let scrollHeight = window.pageYOffset;

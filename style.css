@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 :root{
-    --mainBg-color: #4831d4;
-    --secodaryBg-color: #351ad9;
+    --mainBg-color: #1f2e28;
+    --secodaryBg-color: #007043;
     --text-color: #ffffff;
     --btn-color: #bafc40;
     
@@ -35,12 +35,15 @@ a{
 ul{
     list-style: none;
 }
-
+.header{
+    background: #292929;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
+
 }
 .fixed-nav{
     position: sticky;
@@ -52,19 +55,40 @@ ul{
     cursor: pointer;
     font-size: 1.4rem;
 }
+.hire-me{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.hire-btn{
+    cursor: pointer;
+}
 
 .menu-btn{
     display: none;
 }
 .logo{
-    font-size: 1.5rem;
-    font-weight: bold;
     
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-right: 20px;
+    padding-right: 10px;
+    border-right: 1px solid #c5c5c5;
 }
+    
+
 
 .nav-links{
     display: flex;
-    gap: 30px;
+    align-items: center;
+    gap: 25px;
+    flex-grow: 1;
+}
+.nav-item{
+    color: #c5c5c5;
+}
+.nav-item:hover{
+    color: #ffffff;
 }
 .container{
     max-width: 1120px;
@@ -85,7 +109,7 @@ ul{
     
 }
 #name{
-    color: var(--btn-color);
+    color: #00ff99;
     font-weight: bold;
 }
 .left-col{
@@ -95,8 +119,6 @@ ul{
 .left-col h1{
     font-size: 3rem;
     margin-bottom: 10px;
-    padding-bottom: 5px;
-    /* border-bottom: 2px solid white; */
     display: inline-block;
 }
 
@@ -105,16 +127,18 @@ ul{
 }
 .left-col .btn{
     display: inline-block;
-    background-color: var(--btn-color);
-    color: var(--btn-color);
-    padding: 10px 20px;
-    border: 2px solid var(--text-color);
+    background-color: #646464;
     border-radius: 5px;
-    margin-top: 10px;
-    text-transform: uppercase;
+    margin-top: 20px;
     transition: 0.3s ease;
-    color: black;
+    padding: 10px 15px;
+    color: rgb(255, 255, 255);
 
+}
+.check-work-btn{
+    background-color: var(--secodaryBg-color) !important;
+    margin-left: 15px;
+    
 }
 .left-col .btn:hover{
     /* background-color: var(--btn-color); */
@@ -136,12 +160,13 @@ ul{
 
 /* About Me section */
 #about-me{
-    padding: 2rem 0;
+    padding: 4rem 0;
 }
 .fa-address-card, .fa-microchip, .fa-laptop-code{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     border-left: 2px solid white;
     padding-left: 10px;
+    color: #ffffff;
 }
 .about-section{
     display: flex;
@@ -176,7 +201,7 @@ ul{
 
 /* SKills sections */
 #skills{
-    padding: 2rem 0;
+    padding: 4rem 0;
 }
 .skills{
     display: grid;
@@ -188,7 +213,8 @@ ul{
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 20px;
+    /* justify-content: space-between; */
     
 }
 
@@ -197,7 +223,7 @@ ul{
 /* Projects section*/
 
 #projects{
-    padding: 2rem 0;
+    padding: 4rem 0;
 }
 
 .projects{
@@ -255,6 +281,9 @@ ul{
 #contact{
     padding: 2rem 0;
 }
+.input{
+    margin-bottom: 15px;
+}
 .input label{
     font-size: 1.3rem;
     
@@ -287,13 +316,14 @@ textarea::placeholder{
     visibility: visible;
 }
 .scroll-btn i{
-    color: var(--btn-color);
+    color: var(--text-color);
 }
 /* Utility Classes */
 .main-heading{
-    color: var(--btn-color);
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    margin-top: 15px;
     font-family: 'Oswald', sans-serif;
 
 }
@@ -384,9 +414,9 @@ textarea::placeholder{
     }
     .menu-btn{
         display: block;
-        position: absolute;
-        right: 30px;
-        top: 15px;
+        /* position: absolute; */
+        /* right: 30px; */
+        /* top: 15px; */
         font-size: 1.5rem;
     }
     
