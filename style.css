@@ -5,7 +5,7 @@
     --mainBg-color: #1f2e28;
     --secodaryBg-color: #007043;
     --text-color: #ffffff;
-    --btn-color: #bafc40;
+    --btn-color: #00ff99;
     
 }
 *{
@@ -109,7 +109,7 @@ ul{
     
 }
 #name{
-    color: #00ff99;
+    color: var(--btn-color);
     font-weight: bold;
 }
 .left-col{
@@ -127,9 +127,9 @@ ul{
 }
 .left-col .btn{
     display: inline-block;
-    background-color: #646464;
     border-radius: 5px;
     margin-top: 20px;
+    border: 1px solid;
     transition: 0.3s ease;
     padding: 10px 15px;
     color: rgb(255, 255, 255);
@@ -137,8 +137,12 @@ ul{
 }
 .check-work-btn{
     background-color: var(--secodaryBg-color) !important;
-    margin-left: 15px;
+    margin-right: 15px;
     
+    
+}
+.fa-arrow-right-long{
+    margin-left: 5px;
 }
 .left-col .btn:hover{
     /* background-color: var(--btn-color); */
@@ -160,7 +164,7 @@ ul{
 
 /* About Me section */
 #about-me{
-    padding: 4rem 0;
+    padding-bottom: 4rem;
 }
 .fa-address-card, .fa-microchip, .fa-laptop-code{
     font-size: 1.5rem;
@@ -201,21 +205,25 @@ ul{
 
 /* SKills sections */
 #skills{
-    padding: 4rem 0;
+    padding-bottom: 4rem;
 }
 .skills{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 .skill-item{
-    background-color: var(--secodaryBg-color);
-    padding: 10px;
+    background-color: rgb(54, 54, 54);
+    padding: 15px;
     display: flex;
     align-items: center;
     gap: 20px;
     /* justify-content: space-between; */
     
+}
+.fa-circle-check{
+    color: var(--btn-color);
+    font-size: 1.3rem;
 }
 
 
@@ -234,14 +242,11 @@ ul{
 .project1{
     position: relative;
     /* background-color: var(--secodaryBg-color); */
-    padding: 10px;
-    border: 2px solid rgba(202, 202, 202, 0.623);
-    border-radius: 20px;
+    border-radius:  20px;
     text-align: center;
 }
 .project1 img{
     display: block;
-    border-radius: 10px;
     transition: 0.3s ease;
 
 }
@@ -250,8 +255,9 @@ ul{
     transition: 0.3s ease;
 }
 .project1 h3{
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 1.3rem;
+    text-transform: uppercase;
 }
 .project1 p{
     display: inline-block;
@@ -268,10 +274,9 @@ ul{
     display: block;
     /* border: 2px solid white; */
     padding: 10px 20px;
-    background-color: var(--btn-color);
-    border-radius: 10px;
-    margin-top: 10px;
-    color: black;
+    background-color: var(--secodaryBg-color);
+    margin-top: 20px;
+    color: white;
 }
 .preview-btn:hover{
     opacity: 0.9;
@@ -279,7 +284,7 @@ ul{
 
 /* Contact */
 #contact{
-    padding: 2rem 0;
+    padding-bottom: 2rem;
 }
 .input{
     margin-bottom: 15px;
